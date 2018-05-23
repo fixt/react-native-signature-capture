@@ -6,7 +6,7 @@ var React = require('react');
 var PropTypes = require('prop-types');
 var {
     requireNativeComponent,
-    View,
+    ViewPropTypes,
     UIManager,
     DeviceEventEmitter
 } = ReactNative;
@@ -62,7 +62,7 @@ class SignatureCapture extends React.Component {
 }
 
 SignatureCapture.propTypes = {
-    ...View.propTypes,
+    ...ViewPropTypes,
     rotateClockwise: PropTypes.bool,
     square: PropTypes.bool,
     saveImageFileInExtStorage: PropTypes.bool,
